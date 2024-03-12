@@ -102,7 +102,8 @@ button:hover {
 }
 
 #copiarBtn {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background-color: #3498db;
   color: white;
   border: none;
@@ -139,4 +140,4 @@ button:hover {
     font-size: 16px;
     max-width: 100%;
   }
-  }
+}
