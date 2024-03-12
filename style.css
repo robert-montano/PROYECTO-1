@@ -1,3 +1,4 @@
+/* Estilos generales para computadoras */
 body {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px; /* Anchura máxima del contenedor principal */
+  max-width: 800px; /* Anchura máxima del contenedor principal para computadoras */
 }
 
 .titulo-container {
@@ -111,4 +112,36 @@ button:hover {
 #imagenResultado {
   max-width: 100%; /* Ajustar el tamaño de la imagen para que no exceda el ancho del contenedor */
   height: auto; /* Mantener la proporción */
+}
+
+/* Estilos específicos para dispositivos móviles (Android y iPhone) */
+@media only screen and (max-width: 768px) {
+  /* Mantener el mismo ancho y alineación del contenedor del resultado */
+  #resultado-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px; /* Agregar un margen superior para evitar que se superponga con los botones */
+  }
+
+  /* Mantener el mismo ancho y alineación del contenedor de la imagen */
+  #imagenResultado-container {
+    max-width: 300px; /* Reducir el tamaño máximo de la imagen */
+    text-align: center;
+    margin-top: 20px; /* Agregar un margen superior para evitar que se superponga con los botones */
+  }
+
+  /* Mantener el mismo tamaño y alineación del botón de copiar */
+  #copiarBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 26px;
+    margin-top: 10px; /* Agregar un margen superior para separar el botón del área de resultado */
+  }
 }
