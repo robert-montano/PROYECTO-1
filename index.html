@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo-container">
+            <h2>Encriptar y Desencriptar</h2>
+        </div>
+
+        <div class="contenido-container">
+            <div class="mensaje-container">
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" class="mensaje-input" placeholder="Escribe tu mensaje" oninput="convertirMinusculas()" pattern="[a-z]+">
+                <p class="mensaje-error">Solo se permiten minúsculas</p>
+
+                <div class="operaciones-container">
+                    <button onclick="encriptar()">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+
+            <div id="imagenResultado-container">
+                <img src="imagenes/Busqueda.jpg" alt="Imagen por defecto" id="imagenResultado" style="max-width: 409.992px; max-height: 512.273px;">
+            </div>
+
+            <div id="resultado-container" class="resultado-transparencia">
+                <textarea id="resultado" readonly="" style="display: block; width: 426px; height: 422px;"></textarea>
+                <button onclick="copiarTexto()" id="copiarBtn" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenido-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mensaje-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.mensaje-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.mensaje-error {
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+.operaciones-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  font-size: 22px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#imagenResultado-container {
+  max-width: 409.992px;
+  max-height: 512.273px;
+}
+
+#resultado-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  height: 512.273px;
+  width: 409.992px;
+  overflow: hidden;
+}
+
+.resultado-transparencia {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#resultado {
+  width: 100%;
+  max-width: 100%;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#copiarBtn {
+  width: 400px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#imagenResultado {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+
+  .mensaje-input {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  #resultado {
+    font-size: 16px;
+  }
+}
