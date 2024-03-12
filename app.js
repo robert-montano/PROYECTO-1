@@ -72,8 +72,8 @@ function convertirMinusculas() {
 function mostrarResultado() {
     const resultadoContainer = document.getElementById("resultado-container");
     resultadoContainer.style.display = "flex";
-    resultadoContainer.style.height = "50vh";
-    resultadoContainer.style.width = "90vw";
+    resultadoContainer.style.height = "512.273px";
+    resultadoContainer.style.width = "409.992px";
 
     document.getElementById("resultado").style.display = "block";
 }
